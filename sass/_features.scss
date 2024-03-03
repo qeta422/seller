@@ -22,6 +22,11 @@
         height: 4.5rem;
         grid-row: 1/span 2;
         transform: translateY(-1rem);
+
+        &:hover {
+            transform: translateY(-1.7rem);
+            transition: .4s;
+        }
     }
     
     &__text {

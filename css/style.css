@@ -29,6 +29,25 @@ body {
   font-weight: 400;
 }
 
+.heading-2 {
+  font-size: 4rem;
+  font-style: italic;
+  line-height: 1;
+}
+.heading-2--light {
+  color: #f9f7f6;
+}
+.heading-2--dark {
+  color: #4f5053;
+}
+
+.heading-3 {
+  font-size: 1.6rem;
+  color: #b1a6a4;
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+
 .heading-4 {
   font-size: 1.9rem;
 }
@@ -37,6 +56,38 @@ body {
 }
 .heading-4--dark {
   color: #4f5053;
+}
+
+.btn {
+  background-color: #b1a6a4;
+  color: white;
+  border: none;
+  border-radius: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1.8rem 3rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #898180;
+  transition: 0.5s;
+}
+
+.mb-sm {
+  margin-bottom: 2rem;
+}
+
+.mb-md {
+  margin-bottom: 3rem;
+}
+
+.mb-lg {
+  margin-bottom: 4rem;
+}
+
+.mb-hg {
+  margin-bottom: 8rem;
 }
 
 .sidebar {
@@ -77,6 +128,10 @@ body {
   grid-row: 1/span 2;
   transform: translateY(-1rem);
 }
+.feature__icon:hover {
+  transform: translateY(-1.7rem);
+  transition: 0.4s;
+}
 .feature__text {
   font-size: 1.7rem;
 }
@@ -84,10 +139,43 @@ body {
 .story__pictures {
   background-color: #b1a6a4;
   grid-column: full-start/col-end 4;
+  background-image: linear-gradient(rgba(177, 166, 164, 0.5), rgba(137, 129, 128, 0.5)), url(../img/back.jpg);
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+}
+.story__img--1 {
+  width: 100%;
+  grid-row: 2/6;
+  grid-column: 2/6;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
+  z-index: 15;
+}
+.story__img--1:hover {
+  z-index: 21;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.story__img--2 {
+  width: 115%;
+  grid-row: 4/6;
+  grid-column: 4/7;
+  z-index: 20;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
 }
 .story__content {
   background-color: #f9f7f6;
   grid-column: col-end 4/full-end;
+  padding: 6rem 8vw;
+  display: grid;
+  align-content: center;
+  justify-items: start;
+}
+.story__text {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 4rem;
 }
 
 .homes {
