@@ -21,12 +21,18 @@ body {
 .container {
   display: grid;
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
-  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 17rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }
 
 .heading-4, .heading-3, .heading-2, .heading-1 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
+}
+
+.heading-1 {
+  font-size: 4.5rem;
+  color: #f9f7f6;
+  line-height: 1;
 }
 
 .heading-2 {
@@ -124,10 +130,49 @@ body {
 .header {
   background-color: #44474c;
   grid-column: full-start/col-end 6;
+  background-image: linear-gradient(rgba(68, 71, 76, 0.93), rgba(68, 71, 76, 0.93)), url(../img/hero.jpeg);
+  background-size: cover;
+  background-position: center;
+  padding: 8rem;
+  display: grid;
+  grid-template-rows: 1fr min-content 6rem 1fr;
+  grid-template-columns: max-content;
+  grid-row-gap: 1.5rem;
+}
+.header__logo {
+  height: 3rem;
+}
+.header .btn {
+  align-self: start;
+  justify-self: start;
+}
+.header__seenon-text {
+  display: grid;
+  font-size: 1.6rem;
+  color: #aaa;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-column-gap: 15px;
+  align-items: center;
+}
+.header__seenon-text::before, .header__seenon-text::after {
+  content: "";
+  height: 1px;
+  display: block;
+  background-color: currentColor;
+}
+.header__seenon-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 3rem;
+  justify-items: center;
+  filter: brightness(70%);
+}
+.header__seenon-logos img {
+  height: 2.5rem;
 }
 
 .realtors {
-  background-color: #697184;
+  background-color: #44474c;
   grid-column: col-end 6/full-end;
 }
 
@@ -136,7 +181,7 @@ body {
   margin: 10rem 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 6rem;
+  gap: 9rem;
   align-items: start;
 }
 
@@ -208,7 +253,7 @@ body {
   margin: 15rem 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 7rem;
+  grid-gap: 9rem;
 }
 
 .home {
@@ -250,7 +295,7 @@ body {
   font-size: 1.6rem;
   text-align: center;
   padding: 1.25rem;
-  background-color: #697184;
+  background-color: #44474c;
   color: white;
   font-weight: 400;
   transform: translateY(50%);

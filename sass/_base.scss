@@ -2,12 +2,11 @@
 $color-primary: #b1a6a4;
 $color-primary-dark: #898180;
 
-$color-secondary: #697184;
+$color-secondary: #44474c;
 
 $color-grey-light-1: #f9f7f6;
 $color-grey-light-2: #aaa;
 
-$color-grey-dark-1: #44474c;
 $color-grey-dark-2: #4f5053;
 
 // FONT VARIABLES
@@ -38,7 +37,7 @@ body {
     display: grid;
     grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
     grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, 
-    [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+    [col-start] minmax(min-content, 17rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }
 
 
