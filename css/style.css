@@ -188,10 +188,20 @@ body {
   grid-row-gap: 5vh;
   align-items: center;
 }
+.realtors__imgdiv {
+  width: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
 .realtors__img {
   width: 6rem;
   border-radius: 50%;
   display: block;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+.realtors__img:hover {
+  transform: scale(1.2);
 }
 .realtors__sold {
   text-transform: uppercase;
@@ -290,11 +300,11 @@ body {
   grid-row: 1/2;
   grid-column: 1/-1;
   z-index: 1;
+  filter: brightness(70%);
+  transition: 0.5s;
 }
 .home__img:hover {
-  transform: scale(1.1);
-  transition: 0.5s;
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+  filter: brightness(100%);
 }
 .home__like {
   grid-row: 1/2;

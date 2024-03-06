@@ -9,7 +9,6 @@
     justify-items: center;
     grid-row-gap: 2rem;
 
-
     &__list {
         display: grid;
         grid-template-columns: min-content max-content;
@@ -18,10 +17,22 @@
         align-items: center;
     }
 
+    &__imgdiv {
+        width: 60px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
     &__img {
         width: 6rem;
         border-radius: 50%;
         display: block;
+        transition: all .3s ease-out;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 
     &__sold {
