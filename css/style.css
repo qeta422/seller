@@ -278,7 +278,7 @@ body {
   margin: 10rem 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 9rem;
+  gap: 13rem;
   align-items: start;
 }
 
@@ -375,7 +375,7 @@ body {
   margin: 15rem 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 9rem;
+  grid-gap: 13rem;
 }
 
 .home {
